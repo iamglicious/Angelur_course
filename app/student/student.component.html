@@ -1,0 +1,18 @@
+<h1>Student</h1>
+<div>
+  <p>Naam student 1: {{student1.firstName}} {{student1.lastName}}</p>
+  <p *ngIf="student2">Naam student 2: {{student2.firstName}} {{student2.lastName}}</p>
+  <button (click)="loadStudent2()">load student2</button>
+  <button (click)="fillStudents()">fill Students</button>
+  <button (click)="deleteStudent()">delete Students</button>
+  <div *ngIf="students">
+    <ul>
+      <li *ngFor="let student of students">{{ student.firstName }}</li>
+    </ul>
+  </div>
+  </div>
+  <div>
+    <input [(ngModel)]="student.firstName">
+    <input [(ngModel)]="student.lastName">
+    <button (click)="postStudent()">post Students</button>
+  </div>

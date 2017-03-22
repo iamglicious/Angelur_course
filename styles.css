@@ -1,0 +1,42 @@
+h1 {
+  color: #904;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 250%;
+  font-variant: small-caps;
+}
+
+h2 {
+  color: #409;
+  font-family: Courier New, Courier, monospace;
+  font-size: 175%;
+  letter-spacing: 0.2em;
+  font-variant: small-caps;
+}
+
+
+div.row {
+  padding: 20px;
+}
+
+div.divCol {
+  padding: 10px;
+  background-color: #efd;
+  border-radius: 3vh;
+  border-color: #fbf;
+  border-width: 3px;
+  border-style: solid;
+}
+
+#divPage {
+  background-color: #dfe;
+}
+
+#divRowTitle {
+  background-color: #def;
+  text-align: center;
+}
+
+#divRowBody {
+  background-color: #dff;
+}
+

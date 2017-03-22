@@ -1,0 +1,38 @@
+<!-- Page construction using Bootstrap               -->
+<!-- The page will be divided into two rows          -->
+<div class="container-fluid" id="divPage">
+  <!-- Row 1: Title and possible navigation          -->
+  <div class="row" id="divRowTitle">
+    <!-- Col 1: page wide column                     -->
+    <div class="col-md-12 divCol" id="divColTitle">
+      <h1>{{ title }}</h1>
+      <h2>{{ subTitle }}</h2>      
+    </div>
+  </div>
+
+  <!-- Row 2: Side bar and main page                 -->
+  <div class="row" id="divRowBody">
+    <!-- Col 1: 25% of width: side Bar               -->
+    <div class="col-md-3 divCol" id="divColSideBar">
+      <h2>Bootstrap</h2>
+      <a href="http://v4-alpha.getbootstrap.com/layout/grid/">>Grid</a><br>
+      <a href="http://v4-alpha.getbootstrap.com/components/buttons/">>Buttons</a>
+      <h2>Info</h2>
+    </div>
+
+    <!-- Col 2: 75% of width: main window            -->
+    <div class="col-md-9 divCol" id="divColMain">
+      <input value="{{ title }}" (click)="title=$event.target.value"><br>
+      <input [value]="title" (change)="changeTitle($event)"><br>
+
+      <input value="{{ e_mail }}" (click)="e_mail=$event.target.value">
+      Je emailadres = {{ e_mail }}<br>
+
+      <input [(ngModel)]="title"><br>
+      <input [(ngModel)]="nr">Het ingevoerde getal is {{ nr }}<br>   
+      <my-student></my-student> 
+      <my-vereniging></my-vereniging>   
+    </div>
+  </div>
+
+</div>
